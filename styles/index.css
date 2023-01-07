@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "TT Lakes Black";
+    font-style: normal;
+    font-weight: 900;
+    src: local('TT Lakes Black'), local('TTLakes-Black'),
+        url("/fonts/TTLakes-Black.eot") format('embedded-opentype'),
+        url("/fonts/TTLakes-Black.woff") format('woff'),
+        url("/fonts/TTLakes-Black.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    font-style: normal;
+    font-weight: normal;
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url("/fonts/TTLakes-Black.eot") format('embedded-opentype'),
+        url("/fonts/TTLakes-Regular.woff") format('woff'),
+        url("/fonts/TTLakes-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "TT Lakes Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url("/fonts/TTLakes-Bold.eot") format('embedded-opentype'),
+        url("/fonts/TTLakes-Bold.woff") format('woff'),
+        url("/fonts/TTLakes-Bold.ttf") format('truetype');
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0em;
+}
+
+.name{
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.name p{
+    font-family: 'TT Lakes', 'TT Lakes Bold', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    margin: 16px;
+}
+
+.brands{
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+    width: 100vw;
+    height: 154px;
+    background-color: #F8F8F8;
+}
+
+.logo{
+    display: flex;
+    margin-left: -24px;
+    min-width: 0;
+    width: 320px;
+    height: 142px;
+    flex-direction: row;
+}
+
+.logo_element{
+    display: flex;
+    justify-content: center;
+}
+
+.logo_element div{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0px 16px 0px 16px;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 240px !important;
+    height: 72px !important;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    margin: 16px 0px;
+}
+
+img[logo]{
+    align-self: center;
+}
+
+.logo a{
+    align-self: center;
+}
+
+.swiper-pagination-bullet{
+    background-color: #DDDDDD !important;
+    width: 12px !important;
+    height: 12px !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #B5B6BC !important;
+    opacity: 1 !important;
+}
+
+.show_more{
+    display: none;
+}
+
+.show_more p{
+    margin: 0;
+}
+
+.show_more img{
+    align-self: center;
+}
+
+@media (min-width: 768px) {
+    .name{
+        width: 768px;
+        height: 56px;
+    }
+
+    .brands{
+        width: 100vw;
+        height: 266px;
+    }
+
+    .swiper-wrapper{
+        display: none;
+    }
+
+    .brands_full{
+        height: 416px;
+    }
+
+    .logo{
+        flex-wrap: wrap;
+        overflow-y: hidden;
+        overflow-x: visible;
+        width: 768px;
+        height: 60% !important;
+        margin: 24px 0px 24px 24px;
+        transform: translateX(0px) !important;
+        justify-content: flex-start;
+    }
+
+    .logo_big{
+        height: 336px !important;
+    }
+
+    .logo_element div{
+        width: 224px !important;
+        margin: 0px 3.2vw 16px 0px;
+    }
+
+    .swiper-pagination{
+        display: none;
+    }
+    
+    #show_more{
+        display: flex;
+    }
+
+    .show_more{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 125px;
+        margin-left: 32px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+    }
+
+    .show_more p{
+        font-family: 'TT Lakes', 'TT Lakes Bold', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .name{
+        width: 1120px;
+    }
+
+    .brands_full{
+        height: 344px;
+    }
+
+    .logo{
+        width: 1120px;
+        margin-left: 32px;
+    }
+
+    .logo_big{
+        height: 244px;
+    }
+
+    .logo_element div{
+        width: 240px !important;
+        margin-right: 3vw;
+    }
+
+    .show_more{
+        margin-left: 39px;
+    }    
+}
